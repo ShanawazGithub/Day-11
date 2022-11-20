@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            min-width: 100%;
+            overflow-x: hidden;
+            height: 100vh;
+            display: flex;
+            align-items: center ;
+            justify-content: center;
+        }
+        #content{
+            border: solid black 3px;
+            margin-left: 1px;
+            padding: 5px;
+            width: 500px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #header{
+            background-color: red;
+           margin: 5px;
+           padding-left: 5px;
+        }
+        #name{
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #fname{
+            width: 200px;
+            border-top: solid #222  3px;
+            text-align: left;
+            margin: 10px;
+            margin-right: 30px;
+            text-transform: capitalize;
+        }
+        #lname{
+            width: 200px;
+            border-top: solid #222   3px;
+            text-transform: capitalize;
+            margin: 10px;
+        }
+        #address{
+            width: 450px;
+            border-top: solid #222  3px;
+            text-transform: capitalize;
+            margin: 10px;
+            margin-left: 20px;
+        }
+        #cit{
+            display: flex;
+            flex-direction: row;
+        }
+        #city{
+            width: 150px;
+            border-top: solid #222  3px;
+            text-transform: capitalize;
+            margin: 10px;
+            text-align: left;
+            margin-left: 20px;
+        }
+        #state{
+            width: 100px;
+            border-top: solid #222  3px;
+            text-transform: capitalize;
+            margin: 10px;
+        }
+        #zip{
+            width: 150px;
+            border-top: solid #222  3px;
+            text-transform: capitalize;
+            margin: 10px;
+        }
+        #chk{
+            margin: 20px;
+        }
+        #h4{
+            margin: 20px;
+        }
+        #footer{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+        <form>
+            <div id="content">
+        <div id="header">
+            <h3>Yes! I want to subscribe to Mag-O-Zine</h3 > 
+        </div>
+<div id="name">
+  <span id="fname">first name </span>      <span id="lname">last name</span>
+</div>
+<div id="address"> address</div>
+
+<div id="cit">
+   <span id="city">city</span>  <span id="state">state</span> <span id="zip">zip</span>
+</div>
+<label id="chk"> <b>Subscribe for:</b> </label>
+<input type="checkbox" checked>1 year ($19.95)
+<input type="checkbox">2 year ($35.00)
+<h4 id="h4">Send me more information about:</h4>
+<div id="footer">
+<input type="checkbox" checked id="comp">
+<label for="comp">Computer-Zine</label> <br>
+<input type="checkbox" id="fish">
+<label for="fish">Fishing-Zine</label> <br>
+<input type="checkbox" checked id="cat">
+<label for="cat">Cat-O-Zine</label>
+</div>
+</div>
+    </form>
+</body>
+</html>
